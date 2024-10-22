@@ -13,7 +13,7 @@ DocOCR.AI is a powerful web application that leverages AI to analyze images and 
 - PDF download of generated reports
 - Improved mobile layout for better responsiveness
 - Example image for initial user testing
-- Progressive Web App (PWA) support for all devices (iOS, Android, etc.)
+- Progressive Web App (PWA) support for all devices (iOS, Android, etc.  )
 
 ## Getting Started
 
