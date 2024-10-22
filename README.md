@@ -10,6 +10,10 @@ DocOCR.AI is a powerful web application that leverages AI to analyze images and 
 - Image content description
 - User-friendly interface with dark/light mode
 - Usage limit of 5 analyses per 24 hours
+- PDF download of generated reports
+- Improved mobile layout for better responsiveness
+- Example image for initial user testing
+- Progressive Web App (PWA) support for all devices (iOS, Android, etc.)
 
 ## Getting Started
 
@@ -27,7 +31,7 @@ To run DocOCR.AI locally:
    ```
 
 3. Set up environment variables:
-   Create a `.env.local` file in the root directory and add your 
+   Create a `.env.local` file in the root directory and add your API keys and other configuration details.
 
 4. Run the development server:
    ```bash
@@ -42,6 +46,13 @@ To run DocOCR.AI locally:
 - [Tailwind CSS](https://tailwindcss.com/) - For styling
 - [Framer Motion](https://www.framer.com/motion/) - For animations
 - [Vercel](https://vercel.com/) - For deployment
+- [html2pdf.js](https://ekoopmans.github.io/html2pdf.js/) - For PDF generation
+
+## New Features
+
+- **PDF Download**: Users can now download their analysis results as a PDF report.
+- **Mobile-Optimized Layout**: The application's interface has been improved for better usability on mobile devices.
+- **Example Image**: A sample image is provided for users to test the application's features immediately upon arrival.
 
 ## Contributing
 
