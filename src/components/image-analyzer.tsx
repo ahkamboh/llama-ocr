@@ -12,7 +12,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const MAX_ANALYSES = 5
-const RESET_INTERVAL = 24 * 60 * 60 * 1000 // 24 hours in milliseconds
+const RESET_INTERVAL = 24 * 60 * 60 * 1000 
 
 export function ImageAnalyzer() {
   const [view, setView] = useState<'initial' | 'upload'>('initial')
