@@ -27,10 +27,7 @@ To run DocOCR.AI locally:
    ```
 
 3. Set up environment variables:
-   Create a `.env.local` file in the root directory and add your API keys:
-   ```
-   NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key_here
-   ```
+   Create a `.env.local` file in the root directory and add your 
 
 4. Run the development server:
    ```bash
