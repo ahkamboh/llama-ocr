@@ -1,9 +1,9 @@
 import React from 'react'
-import SignInPage from './(auth)/sign-in/[[...sign-in]]/page'
+import { ImageAnalyzer } from '@/components/image-analyzer'
 function page() {
   return (
     <div>
-      <SignInPage />
+      <ImageAnalyzer />
     </div>
   )
 }

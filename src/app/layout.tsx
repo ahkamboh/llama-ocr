@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { StackProvider, StackTheme } from "@stackframe/stack";
-import { stackServerApp } from "../stack";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import { ClerkProvider } from "@clerk/nextjs";
+import { neobrutalism } from "@clerk/themes";
+import 'clerk-themez/themes/whitegrain.css';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -46,6 +46,15 @@ export const metadata: Metadata = {
     follow: true,
   },
   themeColor: "#ffffff",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "DocOCR.AI",
+  },
+  icons: {
+    apple: "/icons/icon-192x192.png",
+  },
 };
 
 export default function RootLayout({
@@ -54,12 +63,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><StackProvider app={stackServerApp}><StackTheme>
-        {children}
-      </StackTheme></StackProvider></body>
-    </html>
+    <ClerkProvider
+      appearance={{
+        baseTheme: neobrutalism,
+        variables: { colorPrimary: "#fa0053" },
+      }}
+    >
+      <html lang="en">
+        <head>
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+          <meta name="apple-mobile-web-app-title" content="DocOCR.AI" />
+          <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        </head>
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }

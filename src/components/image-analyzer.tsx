@@ -10,6 +10,7 @@ import remarkGfm from 'remark-gfm'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { UserButton } from '@clerk/nextjs'
 
 const MAX_ANALYSES = 5
 const RESET_INTERVAL = 24 * 60 * 60 * 1000 
@@ -122,15 +123,9 @@ export function ImageAnalyzer() {
             />
             <h1 className="text-3xl font-bold">Docr.ai</h1>
           </Link>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="rounded-full"
-          >
-            {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-          </Button>
-        </div>
+            <UserButton />
+
+                </div>
       </header>
 
       <main className="flex-grow flex flex-col items-center justify-center p-4">
