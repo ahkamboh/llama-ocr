@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DocOCR.AI - Intelligent Document Analysis
+
+DocOCR.AI is a powerful web application that leverages AI to analyze images and documents. Built with Next.js and cutting-edge AI technologies, it offers features like object detection, text recognition, and content description.
+
+## Features
+
+- Image upload and analysis
+- Object detection in images
+- Text recognition (OCR)
+- Image content description
+- User-friendly interface with dark/light mode
+- Usage limit of 5 analyses per 24 hours
 
 ## Getting Started
 
-First, run the development server:
+To run DocOCR.AI locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/doc-ocr.git
+   cd doc-ocr.ai
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory and add your API keys:
+   ```
+   NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key_here
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/) - React framework for production
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Framer Motion](https://www.framer.com/motion/) - For animations
+- [Vercel](https://vercel.com/) - For deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to [Vercel](https://vercel.com) for the Geist font and hosting platform.
+- Inspired by the growing need for intelligent document analysis tools.
+
+## Contact
+
+For any queries, please reach out to [Linkedin](https://linkedin.com/in/ahkamboh).
